@@ -17,6 +17,7 @@
             <div class="col-md-2">
                 <button class="btn btn-default" id="markAllCompleted"><i class="fa fa-angle-double-down" aria-hidden="true"></i></button>
             </div>
+
             <div class="col-md-10">
                 <input class="form-control" type="text" id="todoText" placeholder="What needs to be done" />
             </div>
@@ -24,28 +25,28 @@
 
         <div class="row vi">
             <div class="col-md-12">
-                <ul class="list-group" id="todoList"></ul>
+                <ul id="todoList" class="list-group"></ul>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-4 text-left">
+            <div class="col-md-4 col-sm-2 text-left">
                 <span>Todos left: <span id="todosLeft"></span></span>
             </div>
 
-            <div class="btn-group col-md-4 text-center" role="group">
+            <div class="btn-group col-md-4 col-sm-7 text-center" role="group">
                 <button class="btn btn-default" id="showAll">All</button>
                 <button class="btn btn-default" id="showActive">Active</button>
                 <button class="btn btn-default" id="showCompleted">Completed</button>
             </div>
              
-            <div class="col-md-4 text-right">
+            <div class="col-md-4 col-sm-5 text-right">
                 <button class="btn btn-default" id="clearCompleted">Clear completed</button>
             </div>    
         </div>
 
         <div class="row">
-            <div class="col-md-12" style="display: none;" id="hollow">
+            <div style="display: none;" id="hollow">
                 <li class="list-group-item"><input type="checkbox"> <span>Todo text</span> <button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button></li>
             </div>
         </div>
