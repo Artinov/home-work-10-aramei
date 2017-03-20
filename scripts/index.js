@@ -112,7 +112,7 @@ function renderTodos(todoFilter) {
         }
 
         todoElementTemplate.querySelector("input").onchange = function(e) {
-            var li = e.path[1];
+            var li = e.target.parentNode;
             var todoIndex = li.getAttribute("todo-index");
             var todo = todos.filter(function(todo) {
                 return todo.index == todoIndex;
@@ -121,7 +121,7 @@ function renderTodos(todoFilter) {
             todo = todos.indexOf(todo[0]);
             todo = todos[todo];
 
-            if (e.path[0].checked) {
+            if (e.target.checked) {
                 li.setAttribute("class", "todo-done list-group-item");
                 todo.isDone = true;
             } else {
@@ -132,7 +132,7 @@ function renderTodos(todoFilter) {
             updateLocalSrorage();
         }
         todoElementTemplate.querySelector("button").onclick = function(e) {
-            var li = e.path[1];
+            var li = e.currentTarget.parentNode;
             var todoIndex = li.getAttribute("todo-index");
             var todo = todos.filter(function(todo) {
                 return todo.index == todoIndex;
