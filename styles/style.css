@@ -1,5 +1,15 @@
+body {
+    background-color: #f5f5f5;
+}
+
+h1 {
+    font-size: 100px;
+    color: #cc9a9a;
+}
+
 ul {
     list-style: none;
+    font-size: 24px;
 }
 
 ul li.todo-done {
@@ -11,10 +21,19 @@ ul li.todo-done {
 	padding-top: 20px;
 }
 
+.list-group-item button {
+    display: none;
+}
+
+.list-group-item:hover button {
+    display: inline-block;
+}
+
 .paper {
+  width: 60%;
+  margin: 0 auto !important;
   background: #fff;
   box-shadow:
-    0 -1px 1px rgba(0,0,0,0.15),
     0 1px 1px rgba(0,0,0,0.15),
     0 10px 0 -5px #eee,
     0 10px 1px -4px rgba(0,0,0,0.15),
@@ -28,4 +47,25 @@ ul li.todo-done {
 	float: right;
 	border: 0;
 	color: #cc9a9a;
+}
+
+.dagger:hover {
+    background: transparent;
+    color: #c25252;
+}
+
+#todoText {
+    outline: none;
+    border: 0;
+    box-shadow: none;
+    font-size: 24px;
+}
+
+#todoText:placeholder-shown {
+    font-style: italic;
+}
+
+#markAllCompleted {
+    border: 0;
+    background-color: #fff;
 }
