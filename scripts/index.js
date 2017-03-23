@@ -55,7 +55,7 @@ markAllCompleted.onclick = function() {
             changeTodoStatus(todo, "todo-done", true);
         });
     }
-
+    showClearCompleted();
     countActiveTodos();
 }
 
@@ -130,7 +130,7 @@ function renderTodos(todoFilter) {
             }
             countActiveTodos();
             updateLocalSrorage();
-            showClearComplete();
+            showClearCompleted();
         }
         todoElementTemplate.querySelector("button").onclick = function(e) {
             var li = e.currentTarget.parentNode;
@@ -180,7 +180,14 @@ function updateLocalSrorage() {
 }
 
 function showClearCompleted() {
-    // check all todos on each element
+    todos.forEach(function(todo) {
+        var showAllbutton = document.querySelector("#clearCompleted");
+        if (todo.isDone == true) {
+            showAllbutton.setAttribute("class", "btn btn-default shown")
+        } else {
+            showAllbutton.setAttribute("class", "btn btn-default hidden")
+        }
+    });
 }
 
 function init() {

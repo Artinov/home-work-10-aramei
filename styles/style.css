@@ -69,3 +69,11 @@ ul li.todo-done {
     border: 0;
     background-color: #fff;
 }
+
+.shown {
+	display: inline-block;
+}
+
+.hidden {
+	display: none;
+}
