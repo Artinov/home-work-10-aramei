@@ -130,6 +130,7 @@ function renderTodos(todoFilter) {
             }
             countActiveTodos();
             updateLocalSrorage();
+            showClearComplete();
         }
         todoElementTemplate.querySelector("button").onclick = function(e) {
             var li = e.currentTarget.parentNode;
@@ -176,6 +177,10 @@ function countActiveTodos() {
 
 function updateLocalSrorage() {
     localStorage.setItem("todos", JSON.stringify(todos));
+}
+
+function showClearCompleted() {
+    // check all todos on each element
 }
 
 function init() {
