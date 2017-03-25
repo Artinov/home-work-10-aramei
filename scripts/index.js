@@ -183,9 +183,9 @@ function showClearCompleted() {
     todos.forEach(function(todo) {
         var showAllbutton = document.querySelector("#clearCompleted");
         if (todo.isDone == true) {
-            showAllbutton.setAttribute("class", "btn btn-default shown")
+            showAllbutton.setAttribute("class", "btn btn-default shown");
         } else {
-            showAllbutton.setAttribute("class", "btn btn-default hidden")
+            showAllbutton.setAttribute("class", "btn btn-default hidden");
         }
     });
 }
