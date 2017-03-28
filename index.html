@@ -15,7 +15,7 @@
     <div class="container">
         <h1 class="text-center">todos</h1>
         <div class="paper">
-            <div class="row">
+            <div class="row line">
                 <div class="col-md-1">
                     <button class="btn" id="markAllCompleted"><i class="fa fa-angle-double-down" aria-hidden="true"></i></button>
                 </div>
@@ -24,8 +24,7 @@
                     <input class="form-control" type="text" id="todoText" placeholder="What needs to be done?" />
                 </div>
             </div>
-            <hr>
-
+        
             <div class="row">
                 <div class="col-md-12 list">
                     <ul id="todoList" class="list-group"></ul>
@@ -37,10 +36,10 @@
                     <span>Todos left: <span id="todosLeft"></span></span>
                 </div>
 
-                <div class="btn-group col-md-4 col-sm-7 text-center" role="group">
-                    <button class="btn btn-default" id="showAll">All</button>
-                    <button class="btn btn-default" id="showActive">Active</button>
-                    <button class="btn btn-default" id="showCompleted">Completed</button>
+                <div class="col-md-4 col-sm-7 text-center">
+                    <button class="btn btn-default btn-xs" id="showAll">All</button>
+                    <button class="btn btn-default btn-xs" id="showActive">Active</button>
+                    <button class="btn btn-default btn-xs" id="showCompleted">Completed</button>
                 </div>
                  
                 <div class="col-md-4 col-sm-5 text-right">

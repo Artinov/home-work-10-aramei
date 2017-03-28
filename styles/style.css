@@ -100,6 +100,26 @@ ul li.todo-done {
 	padding-right: 5.5px;
 }
 
-hr {
-    margin: 0;
+.line {
+	border-bottom: 1px solid #ddd;
+}
+
+.btn-xs {
+	border: 0;
+	background-color: #fff;
+	color: black;
+}
+
+.btn-xs:hover {
+	border: 0;
+}
+
+.btn-xs:active {
+	border: 0;
+	background-color: #fff;
+}
+
+.btn-xs:visited {
+	border: 1px solid #cc9a9a;
+	background-color: #fff;
 }

@@ -156,13 +156,13 @@ function highlightButton(todoFilter) {
     })
     switch(todoFilter) {
         case true:
-            showCompleted.setAttribute("class", "btn btn-primary");
+            showCompleted.setAttribute("class", "btn btn-primary btn-xs");
             break;
         case false:
-            showActive.setAttribute("class", "btn btn-primary");
+            showActive.setAttribute("class", "btn btn-primary btn-xs");
             break;
         case null:
-            showAll.setAttribute("class", "btn btn-primary");
+            showAll.setAttribute("class", "btn btn-primary btn-xs");
             break;
     }
 }
@@ -183,9 +183,9 @@ function showClearCompleted() {
     todos.forEach(function(todo) {
         var showAllbutton = document.querySelector("#clearCompleted");
         if (todo.isDone == true) {
-            showAllbutton.setAttribute("class", "btn btn-default shown");
+            showAllbutton.setAttribute("class", "btn btn-default btn-xs shown");
         } else {
-            showAllbutton.setAttribute("class", "btn btn-default hidden");
+            showAllbutton.setAttribute("class", "btn btn-default btn-xs hidden");
         }
     });
 }
