@@ -96,5 +96,10 @@ ul li.todo-done {
 }
 
 .list {
-	padding: 5.5px
+    padding-left: 5.5px;
+	padding-right: 5.5px;
+}
+
+hr {
+    margin: 0;
 }
